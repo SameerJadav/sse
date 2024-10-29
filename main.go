@@ -12,7 +12,6 @@ import (
 
 	"github.com/google/uuid"
 	"github.com/gorilla/websocket"
-	"github.com/joho/godotenv"
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
 )
@@ -41,10 +40,6 @@ type Room struct {
 var rooms = make(map[string]*Room)
 
 func main() {
-	if err := godotenv.Load(); err != nil {
-		log.Fatal(err)
-	}
-
 	e := echo.New()
 
 	tmpl, err := template.ParseFS(roomTmpl, "templates/room.html")
