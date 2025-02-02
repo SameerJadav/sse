@@ -1,16 +1,14 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Room</title>
+    <link rel="stylesheet" href="/lite-yt-embed.css" />
+  </head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width" />
-	<title>Room</title>
-	<link rel="stylesheet" href="/lite-yt-embed.css" />
-</head>
-
-<body>
-	<lite-youtube videoid="{{ .VideoID }}" js-api></lite-youtube>
-	<script type="module" src="/room.js"></script>
-</body>
-
+  <body>
+    <lite-youtube videoid="{{ .VideoID }}" js-api></lite-youtube>
+    <script type="module" src="/room.js"></script>
+  </body>
 </html>
